@@ -1,0 +1,33 @@
+@import './styles/variables.scss';
+
+*{
+  background-color: $backgroundColor;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:  $fontColor;
+  font-family: $fontFamily;
+}
+
+.pageTitle {
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+
+.main {
+  color: $fontColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  &--title {
+    margin: 25px 0;
+  }
+}
+
+img {
+  width: 200px;
+}

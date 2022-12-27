@@ -1,0 +1,36 @@
+{
+  "name": "lemon-code-bundle-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p -l type-check:watch && start:dev",
+    "start:dev": "rimraf dist && parcel ./src/index.html --open",
+    "build": "rimraf dist && parcel ./src/index.html",
+    "build:prod": "rimraf dist && parcel build ./src/index.html",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adharamonzon/lemon-code-bundle-parcel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adharamonzon/lemon-code-bundle-parcel/issues"
+  },
+  "homepage": "https://github.com/adharamonzon/lemon-code-bundle-parcel#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.5",
+    "rimraf": "^3.0.2",
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.4"
+  }
+}
